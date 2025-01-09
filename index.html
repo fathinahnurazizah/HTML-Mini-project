@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="todo_wrapper">
+        <h2>My to-do list</h2>
+        <p>Double-click an item to mark it complete.</p>
+
+        <form name="todo_adder">
+            <input type="text" id="todo_entry_box" />
+        </form>
+        <button id="add_button" class="pretty_button">Add</button>
+        <br />
+        <ol id="todo_list">
+        </ol>
+        <div id="control_wrapper">
+            <button id="clear_completed_button" onclick="clearCompletedToDoItems()" class="pretty_button">Clear Completed</button>
+            <button id="empty_button" onclick="emptyList()" class="pretty_button">Empty List</button>
+            <button id="save_button" onclick="saveList()" class="pretty_button">Save List</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>

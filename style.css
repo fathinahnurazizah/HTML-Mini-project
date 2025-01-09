@@ -1,0 +1,110 @@
+body {
+    background-image: url("Studio Ghibli Wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Arial", "sans-serif";
+}
+
+.todo_wrapper{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    opacity: 0.9;
+    border-radius: 15px;
+    padding : 25px;
+    font-weight: 250;
+}
+
+.todo_wrapper h2{
+    margin : 0;
+}
+
+.todo_wrapper p {
+    font-style: italic;
+    color : grey;
+    margin : 5px 0
+}
+
+.todo_wrapper ol{
+    margin : 20px 0;
+}
+
+.todo_wrapper ol li{
+    margin : 5px 0;
+    padding : 3px;
+    transition: all 0.5s ease-out;
+}
+
+.todo_wrapper ol li:nth-child(even){
+    background: #ddd;
+}
+
+.todo_wrapper .completed{
+    text-decoration-line: line-through;
+    color: #666;
+}
+
+.todo_wrapper form{
+    display: inline-block;
+}
+
+.todo_wrapper input{
+    padding : 3px 5 px;
+}
+
+.todo_wrapper .pretty_button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.todo_wrapper .pretty_button {
+    margin : 10px 2px;
+    color : white;
+    background-color: #4a82c7;
+    padding : 5px 20px;
+    border: none;
+    text-align: "center";
+    display: inline-block;
+    font-size: small;
+}
+
+#control_wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo_wrapper #clear_button {
+    background-color: grey;
+}
+
+.todo_wrapper #empty_button {
+    background-color: #c7544a;
+}
+
+.todo_wrapper #save_button {
+    background-color: #58c74a;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo_wrapper {
+        width: 50%;
+    }
+
+    .todo_wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo_wrapper {
+        width: 75%;
+    }
+
+    .todo_wrapper input {
+        width: 400px;
+    }
+}
